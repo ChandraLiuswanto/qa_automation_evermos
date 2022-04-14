@@ -11,5 +11,6 @@ The project use multiple open source library: Python:3.8.10, Selenium, pandas
 2. Download this repo or downlaod using `git clone https://github.com/ChandraLiuswanto/qa_automation_evermos.git` on git cli
 3. Extract the folder and navigate to the extracted folder
 4. Using cmd or terminal on the extracted folder run 'python main.py'
+5. The output is generated on 'output.csv'
 
 ### Example video
