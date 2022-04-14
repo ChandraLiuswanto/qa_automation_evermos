@@ -40,15 +40,15 @@ if __name__ == '__main__':
         except TypeError: 
             pass
         finally:
-            limit = int(limit)+1
+            limit = int(limit)
             break
     while True:
         try:
-            start = input('Start the maximum loop (int) = ')
+            start = input('Start the loop (int) = ')
         except TypeError: 
             pass
         finally:
-            start = int(limit)
+            start = int(start)
             break
     data_x = []
     home_page = 'https://berikhtiar.com/huhuhuh.ce6'
