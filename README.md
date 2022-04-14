@@ -10,8 +10,8 @@ The expected result is the total value that customer price on third party websit
 The project use multiple open source library: Python:3.8.10, Selenium, pandas
 
 ### How to use this script?
-1. First download python with version 3.8.10
-2. Install the required library `pip install Selenium pandas`
+1. First, download Python with version 3.8.10
+2. Install the required library `pip install selenium pandas`. For windows, run `python -m pip install selenium pandas`
 3. Download this repo by download as zip or using `git clone https://github.com/ChandraLiuswanto/qa_automation_evermos.git` on git cli
 4. Extract the folder and navigate to the extracted folder
 5. Using cmd or terminal on the extracted folder run  `python main.py `
