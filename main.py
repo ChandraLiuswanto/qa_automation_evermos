@@ -5,11 +5,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import ElementClickInterceptedException
-import sys
+import dataframe_image as dfi
 from time import sleep
 from time import time
 from random import randint
 import pandas as pd
+
 
 def wait_element(val,timeout=20):
     WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((By.XPATH, val)))
@@ -34,10 +35,18 @@ def read_val(val):
     return driver.find_element(by=By.XPATH, value=val).text
     
 if __name__ == '__main__':
+    while True:
+        try:
+            limit = input('Limit the maximum loop (int) = ')
+        except TypeError: 
+            pass
+        finally:
+            limit = int(limit)
+            break
     data_x = []
     home_page = 'https://berikhtiar.com/huhuhuh.ce6'
 
-    for i in range(1,9):
+    for i in range(1,limit):
         t0 = time()
         driver = webdriver.Edge()
         driver.get(home_page)
@@ -96,3 +105,4 @@ if __name__ == '__main__':
     df.columns=('ts','link','Stock Max', 'Price', 'Stock Selected',
                 'Delivery Price','Total Price', 'Data Correct')
     print(df)
+    dfi.export(df,"output.png")
