@@ -42,10 +42,17 @@ if __name__ == '__main__':
         finally:
             limit = int(limit)+1
             break
+    while True:
+        try:
+            start = input('Start the maximum loop (int) = ')
+        except TypeError: 
+            pass
+        finally:
+            start = int(limit)
+            break
     data_x = []
     home_page = 'https://berikhtiar.com/huhuhuh.ce6'
-
-    for i in range(1,limit):
+    for i in range(start,start+limit):
         t0 = time()
         driver = webdriver.Edge()
         driver.get(home_page)
