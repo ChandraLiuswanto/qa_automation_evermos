@@ -1,7 +1,7 @@
 ### qa_automation_evermos
-Automation QA case for first time buyer on berikhtiar.com to buy an item. 
+Automation QA case for first time buyer on berikhtiar.com to buy an item. berikhtiar.com is personal reseller store to accomodate user to buy an item directly to evermos.com.
 
-The project use Selenium 4 webdriver on Edge using Python languague 
+The project use Selenium 4 webdriver on Edge using Python languague. There are still known bug for example the scraping price data sometimes is the price without discount, for a proof of concept, the sleep is added to wait the page is fully loaded. For each loop, the program takes estimated 45 to 60 second. The time can be reduce by reducing the sleep and add function to wait the page is fully loaded
 
 The expected result is the total value that customer price on third party website is match to the expected price 
 
