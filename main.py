@@ -57,6 +57,7 @@ if __name__ == '__main__':
             except ElementClickInterceptedException:
                 spam_end(1)
         ## On object page
+        sleep(3) #wait to image to laod
         price_val = '//*[@id="__layout"]/div/div[4]/div[6]/div/div[1]/div[2]/div/div[2]'
         driver.implicitly_wait(5)
         try:
