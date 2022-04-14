@@ -98,7 +98,7 @@ if __name__ == '__main__':
         run_click('//*[@id="__layout"]/div/div[2]/button')
         run_click('//*[@id="__layout"]/div/div[6]/div/div[3]/button[1]')
         final_price = int((read_val('//*[@id="application"]/div[4]/div/div/div/div[1]/div[1]/div[2]/span[2]').replace(',','')).replace('Rp',''))
-        val_correct =final_price==stock_selected*price+ongkir_price
+        val_correct = (final_price-ongkir_price)%price == 0
         data_x.append([int(time()-t0),link,stock,price,stock_selected,ongkir_price,final_price,val_correct])
         driver.close()
     df = pd.DataFrame(data_x)
