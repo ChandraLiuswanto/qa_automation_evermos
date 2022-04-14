@@ -3,6 +3,9 @@ Automation QA case for first time buyer on berikhtiar.com to buy an item.
 
 The project use Selenium 4 webdriver on Edge using Python languague 
 
+The expected result is the total value that customer price on third party website is match to the expected price 
+
+
 ### Project requiremment
 The project use multiple open source library: Python:3.8.10, Selenium, pandas
 
