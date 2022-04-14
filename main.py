@@ -11,7 +11,6 @@ from time import time
 from random import randint
 import pandas as pd
 
-
 def wait_element(val,timeout=20):
     WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((By.XPATH, val)))
     
@@ -41,7 +40,7 @@ if __name__ == '__main__':
         except TypeError: 
             pass
         finally:
-            limit = int(limit)
+            limit = int(limit)+1
             break
     data_x = []
     home_page = 'https://berikhtiar.com/huhuhuh.ce6'
@@ -105,4 +104,4 @@ if __name__ == '__main__':
     df.columns=('ts','link','Stock Max', 'Price', 'Stock Selected',
                 'Delivery Price','Total Price', 'Data Correct')
     print(df)
-    dfi.export(df,"output.png")
+    df.to_csv('output.csv')
