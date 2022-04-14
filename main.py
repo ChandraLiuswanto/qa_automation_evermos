@@ -5,7 +5,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import ElementClickInterceptedException
-import dataframe_image as dfi
 from time import sleep
 from time import time
 from random import randint
